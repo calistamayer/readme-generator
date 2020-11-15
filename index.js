@@ -49,13 +49,14 @@ const questions = [
     }
 ];
 
+
 // function to write README file
 function writeToFile(fileName, data) {
 }
 
 // function to initialize program
 function init() {
-
+    return inquirer.prompt(questions);
 }
 
 // function call to initialize program
