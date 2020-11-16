@@ -8,12 +8,12 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  Installation
-  Usage
-  License
-  Contributing
-  Tests
-  Questions
+  [Installation](#installation)
+  [Usage](#usage)
+  [License](#license)
+  [Contributing](#contributing)
+  [Tests](#tests)
+  [Questions](#questions)
 
   ## Installation
 
