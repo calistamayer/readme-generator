@@ -8,12 +8,12 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
 
@@ -29,15 +29,15 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  ${data.test}
+  - ${data.test}
 
-  ${data.reporting}
+  - ${data.reporting} to report errors
 
   ## Questions
 
-  This application was created by [${data.user}](https://github.com/${data.user}).
+  - This application was created by [${data.user}](https://github.com/${data.user}).
 
-  Contact creator via email at ${data.email} with additional questions. 
+  - Contact creator via email at ${data.email} with additional questions. 
 
 `;
 }
