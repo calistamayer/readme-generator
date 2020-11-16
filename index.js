@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require('fs')
 
 // array of questions for user
 const questions = [
@@ -37,7 +38,7 @@ const questions = [
         name: 'reporting',
         message: 'Enter application error reporting process'
     },
-    { 
+    {
         type: 'input',
         name: 'email',
         message: 'Enter your email address'
@@ -49,14 +50,21 @@ const questions = [
     }
 ];
 
-
 // function to write README file
 function writeToFile(fileName, data) {
+    //this is just using a small bit of data to give you an idea of how to get started
+    const readme = `# ${data.title} \n ## ${data.description}`
+
+    fs.writeFile(fileName, readme, (err) => {
+        if(err) return console.log(`error writing file ${err}`)
+    })
 }
 
 // function to initialize program
 function init() {
-    return inquirer.prompt(questions);
+    inquirer.prompt(questions).then(answers => {
+        writeToFile('readme.md', answers);
+    })
 }
 
 // function call to initialize program
