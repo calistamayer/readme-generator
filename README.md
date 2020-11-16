@@ -19,7 +19,9 @@
 
   ## Usage
 
+  Initiate from command line using node index
   Enter input following prompts
+  [Walkthrough video](https://drive.google.com/file/d/1cWDY-dZ81Yd_H4y7JQbdxVyJ6WKZ_zin/view)
 
   ## Contributing
 
